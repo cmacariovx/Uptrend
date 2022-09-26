@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #1f1f1f;
+    letter-spacing: 0px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    shape-rendering: crispEdges;
+    image-rendering: optimizeQuality;
+    border: none;
+    background: none;
+    appearance: none;
+    outline: none;
+}
+
+:root {
+    --black: #1f1f1f;
+    --darkPurple: rgba(50, 39, 77, 0.4);
+    --darkBlue: rgba(56, 69, 211, 0.1);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #1f1f1f;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .leftMain {
+        height: 100%;
+        width: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #1f1f1f;
+        padding: 50px 50px;
+    }
+
+        .logoBox {
+            height: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .appName {
+                font-size: 26px;
+                font-weight: bold;
+                color: white;
+            }
+
+            .fa-arrow-trend-up {
+                color: white;
+            }
+
+        .leftMainMiddle {
+            height: 70%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .houseBox {
+                height: 8%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-right: 3px solid rgba(56, 69, 211, 1);
+            }
+
+            .fa-house {
+                color: white;
+                cursor: pointer;
+            }
+
+            .fa-house:hover {
+                transition: linear 0.1s;
+                color: rgb(85, 127, 206);
+            }
+
+    .middleMain {
+        height: 100%;
+        width: 75%;
+        padding: 50px 125px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--darkPurple);
+    }
+
+        .middleMainUpper {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .middleMainUpperLeft {
+                height: 100%;
+                width: 60%;
+                display: flex;
+                padding: 30px 50px;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                background-image: linear-gradient(140deg, rgb(232, 16, 66) 5%, rgb(232, 16, 95));
+                border-radius: 40px;
+            }
+
+                .searchHeader {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 30%;
+                    width: 100%;
+                }
+
+                    .searchHeaderText {
+                        color: white;
+                        font-weight: bold;
+                        font-size: 24px;
+                    }
+
+                .searchContainer {
+                    height: 60%;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                    .searchBar {
+                        border: none;
+                        border-bottom: 2px white solid;
+                        outline: none;
+                        border-radius: 0px;
+                        padding: 8px 2px;
+                        background: transparent;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        width: 80%;
+                        max-width: 450px;
+                        margin-right: 30px;
+                    }
+
+                        ::placeholder {
+                            color: rgba(255, 255, 255, 0.6);
+                            font-size: 14px;
+                        }
+
+                    .searchButton {
+                        height: 40px;
+                        width: 40px;
+                        background-color: white;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+
+                    .fa-magnifying-glass {
+                        color: var(--black);
+                    }
+
+            .middleMainUpperRight {
+                height: 100%;
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .tickerBox {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    padding: 35px 35px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-image: linear-gradient(90deg, rgba(56, 69, 211, 1), rgb(85, 127, 206));
+                    border-radius: 40px;
+                }
+
+                    .tickerHeader {
+                        height: 25%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+
+                        .tickerHeaderText {
+                            color: white;
+                            font-weight: bold;
+                            font-size: 22px;
+                        }
+
+                    .tickerBody {
+                        height: 60%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                        .tickerBodyText {
+                            color: white;
+                            font-weight: bold;
+                            font-size: 30px;
+                        }
+
+        .middleMainMiddle {
+            height: 60%;
+            width: 100%;
+            padding: 0px 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: var(--darkBlue);
+            border-radius: 40px;
+        }
+
+            .chartHeader {
+                height: 10%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+                .chartHeaderText {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+
+            .middleMainMiddleChartContainer {
+                height: 75%;
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        .middleMainLower {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 40px;
+        }
+
+            .middleMainLowerLeft {
+                height: 100%;
+                width: 28%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-image: linear-gradient(90deg, rgba(56, 69, 211, 1), rgb(85, 127, 206));
+                border-radius: 40px;
+                cursor: pointer;
+            }
+
+                .clickTickerBody {
+                    height: 50%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    .fa-brands {
+                        color: white;
+                    }
+
+                    .clickTickerText {
+                        color: white;
+                        font-weight: bold;
+                        font-size: 34px;
+                        padding-left: 20px;
+                    }
+
+            .middleMainLowerMiddle {
+                height: 100%;
+                width: 28%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-image: linear-gradient(90deg, rgba(56, 69, 211, 1), rgb(85, 127, 206));
+                border-radius: 40px;
+                cursor: pointer;
+            }
+
+            .middleMainLowerRight {
+                height: 100%;
+                width: 28%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-image: linear-gradient(90deg, rgba(56, 69, 211, 1), rgb(85, 127, 206));
+                border-radius: 40px;
+                cursor: pointer;
+            }
+
+    .rightMain {
+        height: 100%;
+        width: 17%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(66, 56, 211, 0.16);
+        padding: 50px 50px;
+    }
+
+        .rightMainUpper {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: var(--darkBlue);
+            border-radius: 40px;
+            padding: 30px 30px;
+        }
+
+            .credits {
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+            }
+
+        .rightMainMiddle {
+            height: 75%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .currentDataHeader {
+                width: 100%;
+                height: 10%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+                .currentDataHeaderText {
+                    color: white;
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+
+            .kpi {
+                height: 18%;
+                width: 100%;
+                background-color: var(--darkBlue);
+                border-radius: 40px;
+                padding: 35px 35px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .kpiHeader {
+                    height: 25%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .kpiHeader2 {
+                    height: 25%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                    .kpiHeaderText {
+                        color: white;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+
+                .kpiBody {
+                    height: 60%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    .kpiBodyText {
+                        color: white;
+                        font-weight: bold;
+                        font-size: 26px;
+                    }
+
+@media screen and (max-width: 2100px) {
+    .credits {
+        font-size: 14px;
+    }
+
+    .leftMain {
+        width: 10%;
+    }
+
+    .middleMain {
+        width: 73%;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .kpiHeaderText {
+        font-size: 16px;
+    }
+
+    .kpiBodyText {
+        font-size: 22px;
+    }
+
+    .clickTickerText {
+        font-size: 26px;
+    }
+
+    .chartHeaderText {
+        font-size: 20px;
+    }
+
+    .currentDataHeaderText {
+        font-size: 20px;
+    }
+
+    .searchHeaderText {
+        font-size: 20px;
+    }
+
+    .tickerHeaderText {
+        font-size: 18px;
+    }
+
+    .tickerBodyText {
+        font-size: 26px;
+    }
+
+    .fa-arrow-trend-up {
+        font-size: 40px;
+    }
+
+    .appName {
+        font-size: 20px;
+    }
+
+    .leftMain {
+        padding: 40px 25px;
+    }
+
+    .rightMain {
+        width: 22%;
+    }
+
+    .middleMain {
+        width: 68%;
+        padding: 50px 50px;
+    }
+
+    .searchButton {
+        height: 34px;
+        width: 34px;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 14px;
+    }
+
+    .searchContainer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .kpi {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .rightMainUpper {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .tickerBox {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainLowerLeft {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainLowerMiddle {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainLowerRight {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainMiddle {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainUpperLeft {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .kpiHeaderText {
+        font-size: 14px;
+    }
+
+    .kpiBodyText {
+        font-size: 20px;
+    }
+
+    .clickTickerText {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .chartHeaderText {
+        font-size: 18px;
+    }
+
+    .currentDataHeaderText {
+        font-size: 18px;
+    }
+
+    .searchHeaderText {
+        font-size: 18px;
+    }
+
+    .tickerHeaderText {
+        font-size: 16px;
+    }
+
+    .tickerBodyText {
+        font-size: 20px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+    .rightMain {
+        padding: 50px 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .fa-house {
+        font-size: 24px;
+    }
+
+    .houseBox {
+        height: 5%;
+    }
+
+    .appName {
+        font-size: 18px;
+    }
+
+    .fa-arrow-trend-up {
+        font-size: 30px;
+    }
+
+    .middleMain {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-height: 1100px) {
+    .middleMain {
+        padding: 25px 30px;
+    }
+
+    .kpi {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .rightMainUpper {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .tickerBox {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainLowerLeft {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainLowerMiddle {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainLowerRight {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainMiddle {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .middleMainUpperLeft {
+        padding: 25px 25px;
+        border-radius: 30px;
+    }
+
+    .kpiHeaderText {
+        font-size: 14px;
+    }
+
+    .kpiBodyText {
+        font-size: 20px;
+    }
+
+    .clickTickerText {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .chartHeaderText {
+        font-size: 18px;
+    }
+
+    .currentDataHeaderText {
+        font-size: 18px;
+    }
+
+    .searchHeaderText {
+        font-size: 18px;
+    }
+
+    .tickerHeaderText {
+        font-size: 16px;
+    }
+
+    .tickerBodyText {
+        font-size: 20px;
+    }
+
+    .fa-brands {
+        font-size: 20px;
+    }
+
+    .rightMain {
+        padding: 50px 25px;
+    }
+}

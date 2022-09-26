@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Uptrend</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/eb226e94f5.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+
+    <body>
+        <main class="main">
+            <div class="leftMain">
+                <div class="logoBox">
+                    <i class="fa-solid fa-arrow-trend-up fa-3x"></i>
+                    <p class="appName">Uptrend</p>
+                </div>
+                <div class="leftMainMiddle">
+                    <div class="houseBox">
+                        <i class="fa-solid fa-house fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="middleMain">
+                <div class="middleMainUpper">
+                    <div class="middleMainUpperLeft">
+                        <div class="searchHeader">
+                            <p class="searchHeaderText">Explore</p>
+                        </div>
+                        <div class="searchContainer">
+                            <input
+                            placeholder="Ex. AAPL"
+                            class="searchBar"
+                            id="searchBar"
+                            type="text"
+                            >
+                            <button class="searchButton" id="searchButton"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="middleMainUpperRight">
+                        <div class="tickerBox">
+                            <div class="tickerHeader">
+                                <p class="tickerHeaderText">Ticker</p>
+                            </div>
+                            <div class="tickerBody">
+                                <p class="tickerBodyText" id="tickerBodyText">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="middleMainMiddle">
+                    <div class="chartHeader">
+                        <p class="chartHeaderText">Price Action - Eastern Time Zone</p>
+                    </div>
+                    <div class="middleMainMiddleChartContainer">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="middleMainLower">
+                    <div class="middleMainLowerLeft" id="amazonButton">
+                        <div class="clickTickerBody">
+                            <i class="fa-brands fa-amazon fa-2x"></i>
+                            <p class="clickTickerText">Amazon</p>
+                        </div>
+                    </div>
+                    <div class="middleMainLowerMiddle" id="microsoftButton">
+                        <div class="clickTickerBody">
+                            <i class="fa-brands fa-microsoft fa-2x"></i>
+                            <p class="clickTickerText">Microsoft</p>
+                        </div>
+                    </div>
+                    <div class="middleMainLowerRight" id="appleButton">
+                        <div class="clickTickerBody">
+                            <i class="fa-brands fa-apple fa-2x"></i>
+                            <p class="clickTickerText">Apple</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightMain">
+                <div class="rightMainUpper">
+                    <p class="credits">Built By Carlos Macario</p>
+                    <p class="credits">Designed By Alex Marais</p>
+                </div>
+                <div class="rightMainMiddle">
+                    <div class="currentDataHeader">
+                        <p class="currentDataHeaderText" id="currentTickerDataText">- Past Hour</p>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpiHeader">
+                            <p class="kpiHeaderText">Price</p>
+                        </div>
+                        <div class="kpiBody">
+                            <p class="kpiBodyText" id="kpiPrice">-</p>
+                        </div>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpiHeader">
+                            <p class="kpiHeaderText">Volume</p>
+                        </div>
+                        <div class="kpiBody">
+                            <p class="kpiBodyText" id="kpiVolume">-</p>
+                        </div>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpiHeader2">
+                            <p class="kpiHeaderText">High</p>
+                            <p class="kpiHeaderText" id="kpiHigh">-</p>
+                        </div>
+                        <div class="kpiHeader2">
+                            <p class="kpiHeaderText">Low</p>
+                            <p class="kpiHeaderText" id="kpiLow">-</p>
+                        </div>
+                    </div>
+                    <div class="kpi">
+                        <div class="kpiHeader2">
+                            <p class="kpiHeaderText">Open</p>
+                            <p class="kpiHeaderText" id="kpiOpen">-</p>
+                        </div>
+                        <div class="kpiHeader2">
+                            <p class="kpiHeaderText">Close</p>
+                            <p class="kpiHeaderText" id="kpiClose">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </body>
+</html>
